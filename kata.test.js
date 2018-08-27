@@ -7,3 +7,7 @@ test('turns 1 to I', () => {
 test('turns 2 to II', () => {
     expect(kata.translate(2)).toBe('II')
 });
+
+test('turns 3 to III', () => {
+    expect(kata.translate(3)).toBe('III')
+});
