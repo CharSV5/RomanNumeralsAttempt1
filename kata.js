@@ -1,5 +1,9 @@
 const numerals = [
-    {value: 10, numeral: 'X'}
+    {value: 10, numeral: 'X'},
+    {value: 9, numeral: 'IX'},
+    {value: 5, numeral: 'V'},
+    {value: 4, numeral: 'IV'},
+    {value: 1, numeral: 'I'}
 ]
 
 const kata = {
@@ -11,23 +15,7 @@ const kata = {
       num -= item.value; 
       }
     })
-     
-    while (num >= 9) {
-        result += 'IX'
-        num -= 9
-    }
-    while (num >=5) {
-        result += 'V'
-        num -= 5
-    }
-    while (num >= 4) {
-        result += 'IV'
-        num -= 4
-    }
-    while (num >= 1) {
-        result += 'I'
-        num -= 1
-    }
+    
     return result 
   }
 }
