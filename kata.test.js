@@ -19,3 +19,7 @@ test('turns 5 to V', () => {
 test('turns 6 to VI', () => {
     expect(kata.translate(6)).toBe('VI')
 });
+
+test('turns 10 to X', () => {
+    expect(kata.translate(10)).toBe('X')
+});
