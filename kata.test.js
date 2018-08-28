@@ -27,3 +27,7 @@ test('turns 10 to X', () => {
 test('turns 20 to XX', () => {
     expect(kata.translate(20)).toBe('XX')
 });
+
+test('turns 4 to IV', () => {
+    expect(kata.translate(4)).toBe('IV')
+});
