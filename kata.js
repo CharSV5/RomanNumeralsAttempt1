@@ -1,9 +1,21 @@
+const numeralChanger = (value, numeral) => {
+    return {value: value, numeral: numeral};
+};
+
 const numerals = [
-    {value: 10, numeral: 'X'},
-    {value: 9, numeral: 'IX'},
-    {value: 5, numeral: 'V'},
-    {value: 4, numeral: 'IV'},
-    {value: 1, numeral: 'I'}
+    numeralChanger(1000, 'M'),
+    numeralChanger(900, 'CM'),
+    numeralChanger(500, 'D'),
+    numeralChanger(400, 'CD'),
+    numeralChanger(100, 'C'),
+    numeralChanger(90, 'XC'),
+    numeralChanger(50, 'L'),
+    numeralChanger(40, 'XL'),
+    numeralChanger(10, 'X'),
+    numeralChanger(9, 'IX'),
+    numeralChanger(5, 'V'),
+    numeralChanger(4, 'IV'),
+    numeralChanger(1, 'I')
 ]
 
 const kata = {

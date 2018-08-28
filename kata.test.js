@@ -35,3 +35,31 @@ test('turns 4 to IV', () => {
 test('turns 9 to IX', () => {
     expect(kata.translate(9)).toBe('IX')
 });
+
+test('turns 17 to XVII', () => {
+    expect(kata.translate(17)).toBe('XVII')
+});
+
+test('turns 44 to XLIV', () => {
+    expect(kata.translate(44)).toBe('XLIV')
+});
+
+test('turns 132 to CXXXII', () => {
+    expect(kata.translate(132)).toBe('CXXXII')
+});
+
+test('turns 490 to CDXC', () => {
+    expect(kata.translate(490)).toBe('CDXC')
+});
+
+test('turns 1554 to MDLIV', () => {
+    expect(kata.translate(1554)).toBe('MDLIV')
+});
+
+test('turns 2999 to MMCMXCIX', () => {
+    expect(kata.translate(2999)).toBe('MMCMXCIX')
+});
+
+
+
+
